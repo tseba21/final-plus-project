@@ -1,6 +1,7 @@
 body {
   background: #f9f7fe;
   font-family: "Roboto", sans-serif;
+  width: 100%;
 }
 
 a {
@@ -48,8 +49,8 @@ main {
 
 .current-temperature {
   font-size: 48px;
+  display: flex;
 }
-
 .current-weather {
   display: flex;
   justify-content: space-between;
@@ -75,7 +76,6 @@ main {
   position: relative;
   top: -8px;
   font-size: 40px;
-  margin-right: 10px;
 }
 
 .current-temperature-value {
@@ -91,22 +91,24 @@ main {
 
 .weather-forecast {
   display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
+  justify-content: space-between;
 }
 
 .weather-forecast-icon {
   display: block;
   margin: 0 auto;
-  width: 40px;
-  height: 88px;
+  padding: 10px auto;
+  width: 100%;
+  height: 60px;
 }
-.weather-forecast-date {
-  color: #0000;
+
+.weather-forecast-day {
+  color: #f65282;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 10px;
+  padding: 20px 25px;
 }
 .weather-forecast-temperatures {
   display: flex;
@@ -116,10 +118,10 @@ main {
   text-align: center;
 }
 .weather-forecast-temperature {
-  padding: 0 10px;
+  padding: 10px 10px;
 }
 
-footer {
+.footer {
   border-top: 1px solid #f9f7fe;
   text-align: center;
   padding-top: 15px;
